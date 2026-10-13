@@ -1,0 +1,286 @@
+{
+  "rows": 127604,
+  "customers": 500,
+  "months": 12,
+  "banks": {
+    "SBI": 117,
+    "HDFC": 103,
+    "ICICI": 97,
+    "AXIS": 96,
+    "CANARA": 87
+  },
+  "archetypes": {
+    "salaried": 193,
+    "pensioner": 109,
+    "student": 73,
+    "low_activity": 72,
+    "business": 53
+  },
+  "missing": {
+    "customer_id": 0,
+    "date": 0,
+    "narration": 0,
+    "debit": 0,
+    "credit": 0,
+    "balance": 0,
+    "bank": 0,
+    "category": 0,
+    "archetype": 0,
+    "amount": 0,
+    "ym": 0
+  },
+  "duplicates": 0,
+  "category_counts": {
+    "UPI_PAYMENT": 68838,
+    "CARD_POS": 15576,
+    "TRANSFER_OUT": 12489,
+    "ATM_WITHDRAWAL": 11235,
+    "TRANSFER_IN": 6473,
+    "INCOME_CREDIT": 5212,
+    "BANK_CHARGE": 3003,
+    "INTEREST_CREDIT": 2000,
+    "LOAN_EMI": 1584,
+    "REFUND_REVERSAL": 1194
+  },
+  "category_share": {
+    "UPI_PAYMENT": 0.5395,
+    "CARD_POS": 0.1221,
+    "TRANSFER_OUT": 0.0979,
+    "ATM_WITHDRAWAL": 0.088,
+    "TRANSFER_IN": 0.0507,
+    "INCOME_CREDIT": 0.0408,
+    "BANK_CHARGE": 0.0235,
+    "INTEREST_CREDIT": 0.0157,
+    "LOAN_EMI": 0.0124,
+    "REFUND_REVERSAL": 0.0094
+  },
+  "debit_share": 0.8833970721920943,
+  "total_debit": 199355298.22000003,
+  "total_credit": 261511797.48,
+  "amount_by_category": {
+    "ATM_WITHDRAWAL": {
+      "median": 2085.0,
+      "mean": 2712.9,
+      "max": 22014.0
+    },
+    "BANK_CHARGE": {
+      "median": 59.0,
+      "mean": 278.9,
+      "max": 1475.0
+    },
+    "CARD_POS": {
+      "median": 1361.0,
+      "mean": 1799.5,
+      "max": 21162.0
+    },
+    "INCOME_CREDIT": {
+      "median": 40052.1,
+      "mean": 45276.1,
+      "max": 199151.4
+    },
+    "INTEREST_CREDIT": {
+      "median": 562.2,
+      "mean": 852.3,
+      "max": 7343.4
+    },
+    "LOAN_EMI": {
+      "median": 12300.0,
+      "mean": 14015.2,
+      "max": 50900.0
+    },
+    "REFUND_REVERSAL": {
+      "median": 450.0,
+      "mean": 706.1,
+      "max": 2000.0
+    },
+    "TRANSFER_IN": {
+      "median": 2574.0,
+      "mean": 3550.9,
+      "max": 30530.0
+    },
+    "TRANSFER_OUT": {
+      "median": 3355.0,
+      "mean": 4397.4,
+      "max": 60000.0
+    },
+    "UPI_PAYMENT": {
+      "median": 606.0,
+      "mean": 913.6,
+      "max": 60000.0
+    }
+  },
+  "narration_len": {
+    "mean": 24.991285539638255,
+    "min": 3,
+    "max": 69
+  },
+  "monthly_spend_total": {
+    "2025-01": 14651790.0,
+    "2025-02": 14320000.0,
+    "2025-03": 16870612.0,
+    "2025-04": 15693623.0,
+    "2025-05": 15747204.0,
+    "2025-06": 18062557.0,
+    "2025-07": 15630311.0,
+    "2025-08": 15687729.0,
+    "2025-09": 16143529.0,
+    "2025-10": 19815036.0,
+    "2025-11": 18866938.0,
+    "2025-12": 17865969.0
+  },
+  "panel_rows": 5985,
+  "panel_corr_next_spend": {
+    "spend": 0.905,
+    "prev_spend": 0.902,
+    "income": 0.79,
+    "amt_INCOME_CREDIT": 0.79,
+    "credits": 0.787,
+    "amt_TRANSFER_OUT": 0.756,
+    "amt_UPI_PAYMENT": 0.739,
+    "n_debit": 0.694,
+    "n_txn": 0.691,
+    "amt_CARD_POS": 0.691
+  },
+  "profile_describe": {
+    "monthly_spend": {
+      "count": 500.0,
+      "mean": 31542.01,
+      "std": 31328.56,
+      "min": 2172.5,
+      "25%": 5391.5,
+      "50%": 20092.18,
+      "75%": 50759.62,
+      "max": 160351.5
+    },
+    "monthly_income": {
+      "count": 500.0,
+      "mean": 39332.95,
+      "std": 36314.27,
+      "min": 0.0,
+      "25%": 7054.27,
+      "50%": 23779.88,
+      "75%": 68049.41,
+      "max": 158218.06
+    },
+    "txn_per_month": {
+      "count": 500.0,
+      "mean": 21.28,
+      "std": 12.29,
+      "min": 3.0,
+      "25%": 9.75,
+      "50%": 24.5,
+      "75%": 26.5,
+      "max": 52.42
+    },
+    "avg_txn": {
+      "count": 500.0,
+      "mean": 1012.81,
+      "std": 613.14,
+      "min": 60.0,
+      "25%": 558.0,
+      "50%": 940.5,
+      "75%": 1404.5,
+      "max": 2963.0
+    },
+    "upi_share": {
+      "count": 500.0,
+      "mean": 0.34,
+      "std": 0.13,
+      "min": 0.04,
+      "25%": 0.24,
+      "50%": 0.31,
+      "75%": 0.41,
+      "max": 0.67
+    },
+    "card_share": {
+      "count": 500.0,
+      "mean": 0.12,
+      "std": 0.06,
+      "min": 0.0,
+      "25%": 0.07,
+      "50%": 0.12,
+      "75%": 0.16,
+      "max": 0.28
+    },
+    "atm_share": {
+      "count": 500.0,
+      "mean": 0.22,
+      "std": 0.14,
+      "min": 0.03,
+      "25%": 0.12,
+      "50%": 0.16,
+      "75%": 0.33,
+      "max": 0.62
+    },
+    "transfer_share": {
+      "count": 500.0,
+      "mean": 0.23,
+      "std": 0.09,
+      "min": 0.0,
+      "25%": 0.17,
+      "50%": 0.22,
+      "75%": 0.29,
+      "max": 0.56
+    },
+    "charges_per_month": {
+      "count": 500.0,
+      "mean": 0.5,
+      "std": 0.25,
+      "min": 0.0,
+      "25%": 0.33,
+      "50%": 0.5,
+      "75%": 0.67,
+      "max": 1.42
+    },
+    "refunds_per_month": {
+      "count": 500.0,
+      "mean": 0.2,
+      "std": 0.14,
+      "min": 0.0,
+      "25%": 0.08,
+      "50%": 0.17,
+      "75%": 0.33,
+      "max": 0.58
+    },
+    "has_emi": {
+      "count": 500.0,
+      "mean": 0.26,
+      "std": 0.44,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "avg_balance": {
+      "count": 500.0,
+      "mean": 147017.33,
+      "std": 138876.43,
+      "min": -170881.45,
+      "25%": 40351.71,
+      "50%": 99709.81,
+      "75%": 237470.94,
+      "max": 821542.59
+    },
+    "min_balance": {
+      "count": 500.0,
+      "mean": 50185.23,
+      "std": 87917.53,
+      "min": -518030.37,
+      "25%": 7145.36,
+      "50%": 26335.34,
+      "75%": 91604.17,
+      "max": 404894.0
+    },
+    "spend_income_ratio": {
+      "count": 500.0,
+      "mean": 1.12,
+      "std": 1.03,
+      "min": 0.0,
+      "25%": 0.68,
+      "50%": 0.8,
+      "75%": 0.94,
+      "max": 5.0
+    }
+  }
+}

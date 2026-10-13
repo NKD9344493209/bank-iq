@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bank IQ</title>
+<meta name="description" content="Bank IQ — a Regulatory Digital Twin for your bank account with a machine-learning intelligence layer: transaction categorisation, customer segments, spend forecasts and anomaly flags.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23144C31'/><text x='32' y='44' font-size='34' text-anchor='middle' fill='%23FFFFFF' font-family='serif' font-weight='700'>₹</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@500;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/" aria-label="Bank IQ home">
+    <span class="mark">₹</span>
+    <span class="name">Bank IQ</span>
+    <span class="tag" data-i18n="tagline">We watch. You don't have to.</span>
+  </a>
+  <nav class="nav">
+    <a href="#/" data-i18n="nav.home">Home</a>
+    <a href="#/findings" data-i18n="nav.findings">Findings</a>
+    <a href="#/twin" data-i18n="nav.twin">My Twin</a>
+    <a href="#/intelligence" data-i18n="nav.intel">Intelligence</a>
+    <a href="#/ask" data-i18n="nav.ask">Ask</a>
+    <a href="#/rules" data-i18n="nav.rules">Rulebook</a>
+    <a href="#/cases" data-i18n="nav.cases">Cases</a>
+    <a href="#/guardian" data-i18n="nav.guardian">Guardian</a>
+    <a href="#/privacy" data-i18n="nav.privacy">Privacy</a>
+    <a href="#/settings" data-i18n="nav.settings">Settings</a>
+  </nav>
+  <div class="lang">
+    <span id="userchip" class="row" style="gap:6px"></span>
+    <button id="lang-ta" class="langbtn" aria-pressed="true">தமிழ்</button>
+    <button id="lang-en" class="langbtn" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<main id="app" class="app" aria-live="polite"></main>
+
+<footer class="foot">
+  <span data-i18n="foot.rule">AI explains. Rules decide. Evidence proves.</span>
+  <span>·</span>
+  <span data-i18n="foot.privacy">We check transactions. We don't sell them. No passwords, ever.</span>
+  <span>·</span>
+  <span id="foot-version"></span>
+</footer>
+
+<div id="toast" class="toast" role="status" hidden></div>
+<script src="app.js" defer></script>
+</body>
+</html>

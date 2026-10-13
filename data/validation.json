@@ -1,0 +1,505 @@
+{
+ "ran_at": "2026-09-25T09:17:34+00:00",
+ "python": "3.11.15",
+ "total": 101,
+ "passed": 101,
+ "failed": 0,
+ "skipped": 0,
+ "exit_code": 0,
+ "groups": [
+  {
+   "module": "test_engine",
+   "title": "Rule engine",
+   "what": "22 rules \u00d7 trap cases: partial reversals, retries, caps by date, free-ATM counts",
+   "passed": 28,
+   "failed": 0,
+   "skipped": 0,
+   "tests": [
+    {
+     "name": "test_amma_parses_all_lines",
+     "status": "passed"
+    },
+    {
+     "name": "test_amma_late_atm_reversal_is_exact",
+     "status": "passed"
+    },
+    {
+     "name": "test_amma_unreversed_failed_upi_claims_principal_plus_compensation",
+     "status": "passed"
+    },
+    {
+     "name": "test_amma_min_balance_asks_before_claiming",
+     "status": "passed"
+    },
+    {
+     "name": "test_amma_answer_no_notice_makes_it_recoverable",
+     "status": "passed"
+    },
+    {
+     "name": "test_amma_answer_yes_makes_it_avoidable_not_a_claim",
+     "status": "passed"
+    },
+    {
+     "name": "test_amma_atm_charge_inside_free_allowance",
+     "status": "passed"
+    },
+    {
+     "name": "test_amma_college_fee_is_never_flagged",
+     "status": "passed"
+    },
+    {
+     "name": "test_amma_priority_ordering",
+     "status": "passed"
+    },
+    {
+     "name": "test_finding_ids_are_stable_across_rescans",
+     "status": "passed"
+    },
+    {
+     "name": "test_arun_tsv_with_metadata_rows_parses",
+     "status": "passed"
+    },
+    {
+     "name": "test_arun_partial_reversal_within_tat_is_not_a_claim",
+     "status": "passed"
+    },
+    {
+     "name": "test_arun_rule_versioning_by_effective_date",
+     "status": "passed"
+    },
+    {
+     "name": "test_arun_sixth_withdrawal_charge_is_avoidable_not_recoverable",
+     "status": "passed"
+    },
+    {
+     "name": "test_arun_same_amount_retry_is_asked_not_claimed",
+     "status": "passed"
+    },
+    {
+     "name": "test_arun_user_confirms_failure_then_claim_appears",
+     "status": "passed"
+    },
+    {
+     "name": "test_priya_penalty_with_balance_always_above_minimum_is_confirmed",
+     "status": "passed"
+    },
+    {
+     "name": "test_priya_imps_reversed_on_time_is_not_a_claim",
+     "status": "passed"
+    },
+    {
+     "name": "test_priya_subscription_price_creep_is_not_a_bank_charge",
+     "status": "passed"
+    },
+    {
+     "name": "test_inoperative_account_penalty_is_recoverable",
+     "status": "passed"
+    },
+    {
+     "name": "test_bsbda_account_every_charge_is_recoverable",
+     "status": "passed"
+    },
+    {
+     "name": "test_card_closure_penalty",
+     "status": "passed"
+    },
+    {
+     "name": "test_unauthorised_txn_zero_liability_no_shadow_credit",
+     "status": "passed"
+    },
+    {
+     "name": "test_unauthorised_txn_reported_late_is_not_automatic",
+     "status": "passed"
+    },
+    {
+     "name": "test_gold_release_before_rule_in_force_is_unclear",
+     "status": "passed"
+    },
+    {
+     "name": "test_rulebook_has_sources_and_dates",
+     "status": "passed"
+    },
+    {
+     "name": "test_suggest_rules_never_claim",
+     "status": "passed"
+    },
+    {
+     "name": "test_atm_cap_rules_do_not_overlap",
+     "status": "passed"
+    }
+   ]
+  },
+  {
+   "module": "test_assistant",
+   "title": "Assistant",
+   "what": "answers only from findings/rulebook; corrects wrong claims",
+   "passed": 22,
+   "failed": 0,
+   "skipped": 0,
+   "tests": [
+    {
+     "name": "test_knowledge_base_answers[how to download bank statements-download-statement]",
+     "status": "passed"
+    },
+    {
+     "name": "test_knowledge_base_answers[statement epdi download pannurathu-download-statement]",
+     "status": "passed"
+    },
+    {
+     "name": "test_knowledge_base_answers[what is kfs-what-is-kfs]",
+     "status": "passed"
+    },
+    {
+     "name": "test_knowledge_base_answers[my upi payment failed but money debited-failed-upi]",
+     "status": "passed"
+    },
+    {
+     "name": "test_knowledge_base_answers[how many free atm transactions-atm-charges]",
+     "status": "passed"
+    },
+    {
+     "name": "test_knowledge_base_answers[how to close credit card-card-closure]",
+     "status": "passed"
+    },
+    {
+     "name": "test_knowledge_base_answers[someone withdrew money without my permission-unauthorised]",
+     "status": "passed"
+    },
+    {
+     "name": "test_knowledge_base_answers[how to complain to rbi-ombudsman]",
+     "status": "passed"
+    },
+    {
+     "name": "test_knowledge_base_answers[gold loan rules-gold-loan]",
+     "status": "passed"
+    },
+    {
+     "name": "test_knowledge_base_answers[what can you do-what-is-vasool]",
+     "status": "passed"
+    },
+    {
+     "name": "test_wrong_statements_are_corrected[is it true that all ATM transactions are free?-atm-unlimited-free]",
+     "status": "passed"
+    },
+    {
+     "name": "test_wrong_statements_are_corrected[I heard SMS charges are illegal now-sms-illegal-now]",
+     "status": "passed"
+    },
+    {
+     "name": "test_wrong_statements_are_corrected[bank says I must complain to get reversal for failed upi-failed-must-complain]",
+     "status": "passed"
+    },
+    {
+     "name": "test_wrong_statements_are_corrected[is the 100 rupees compensation capped at a maximum?-compensation-capped]",
+     "status": "passed"
+    },
+    {
+     "name": "test_wrong_statements_are_corrected[do i need a lawyer for rbi ombudsman-ombudsman-fee]",
+     "status": "passed"
+    },
+    {
+     "name": "test_wrong_statements_are_corrected[bank can charge minimum balance without notice right?-minbal-no-notice]",
+     "status": "passed"
+    },
+    {
+     "name": "test_account_question_uses_finding",
+     "status": "passed"
+    },
+    {
+     "name": "test_ordinary_payment_is_explained_not_flagged",
+     "status": "passed"
+    },
+    {
+     "name": "test_off_topic_gets_honest_fallback",
+     "status": "passed"
+    },
+    {
+     "name": "test_tamil_question_answered_in_tamil",
+     "status": "passed"
+    },
+    {
+     "name": "test_works_without_any_statement",
+     "status": "passed"
+    },
+    {
+     "name": "test_greeting_and_thanks",
+     "status": "passed"
+    }
+   ]
+  },
+  {
+   "module": "test_multi_statements",
+   "title": "Statement merging & history",
+   "what": "duplicates, gaps, verdicts that change when a month appears",
+   "passed": 10,
+   "failed": 0,
+   "skipped": 0,
+   "tests": [
+    {
+     "name": "test_merge_drops_overlap_and_keeps_existing_ids",
+     "status": "passed"
+    },
+    {
+     "name": "test_merge_is_idempotent",
+     "status": "passed"
+    },
+    {
+     "name": "test_coverage_finds_gaps",
+     "status": "passed"
+    },
+    {
+     "name": "test_second_statement_changes_the_verdict",
+     "status": "passed"
+    },
+    {
+     "name": "test_same_file_twice_adds_nothing",
+     "status": "passed"
+    },
+    {
+     "name": "test_other_banks_statement_is_refused",
+     "status": "passed"
+    },
+    {
+     "name": "test_two_files_in_one_scan_equals_merge",
+     "status": "passed"
+    },
+    {
+     "name": "test_history_lists_accounts_with_totals",
+     "status": "passed"
+    },
+    {
+     "name": "test_printable_complaint",
+     "status": "passed"
+    },
+    {
+     "name": "test_remove_statement_rescans",
+     "status": "passed"
+    }
+   ]
+  },
+  {
+   "module": "test_twin_time_voice",
+   "title": "Twin, time slider, voice",
+   "what": "twin payloads, as-of recompute, Twilio trial fallback",
+   "passed": 10,
+   "failed": 0,
+   "skipped": 0,
+   "tests": [
+    {
+     "name": "test_tat_findings_carry_twin_payload",
+     "status": "passed"
+    },
+    {
+     "name": "test_minbal_twin_is_blind_without_prior_month_then_sees_the_path",
+     "status": "passed"
+    },
+    {
+     "name": "test_as_of_slider_recomputes_per_day_claims",
+     "status": "passed"
+    },
+    {
+     "name": "test_voice_unconfigured_is_simulated_not_failed",
+     "status": "passed"
+    },
+    {
+     "name": "test_voice_demo_phone_overrides_and_posts_tamil_twiml",
+     "status": "passed"
+    },
+    {
+     "name": "test_voice_bad_number_and_twilio_error_never_crash",
+     "status": "passed"
+    },
+    {
+     "name": "test_request_approval_places_the_holder_call_and_logs_it",
+     "status": "passed"
+    },
+    {
+     "name": "test_test_call_endpoint_and_health_status",
+     "status": "passed"
+    },
+    {
+     "name": "test_trial_account_falls_back_to_hosted_twiml_url",
+     "status": "passed"
+    },
+    {
+     "name": "test_custom_twiml_bin_is_used_directly",
+     "status": "passed"
+    }
+   ]
+  },
+  {
+   "module": "test_security",
+   "title": "test_security",
+   "what": "",
+   "passed": 8,
+   "failed": 0,
+   "skipped": 0,
+   "tests": [
+    {
+     "name": "test_login_required_for_account_apis_but_not_public_ones",
+     "status": "passed"
+    },
+    {
+     "name": "test_signup_login_logout_and_password_rules",
+     "status": "passed"
+    },
+    {
+     "name": "test_users_cannot_see_each_others_accounts",
+     "status": "passed"
+    },
+    {
+     "name": "test_everything_in_sqlite_is_ciphertext",
+     "status": "passed"
+    },
+    {
+     "name": "test_crypto_roundtrip_and_password_hash",
+     "status": "passed"
+    },
+    {
+     "name": "test_deadline_clock_promotes_small_claims_and_alerts_once",
+     "status": "passed"
+    },
+    {
+     "name": "test_telegram_unconfigured_is_simulated",
+     "status": "passed"
+    },
+    {
+     "name": "test_red_alert_message_is_actionable_and_minimal",
+     "status": "passed"
+    }
+   ]
+  },
+  {
+   "module": "test_api",
+   "title": "API & human loop",
+   "what": "scan \u2192 answers \u2192 guardian \u2192 case \u2192 approval",
+   "passed": 7,
+   "failed": 0,
+   "skipped": 0,
+   "tests": [
+    {
+     "name": "test_health",
+     "status": "passed"
+    },
+    {
+     "name": "test_scan_returns_findings_and_summary",
+     "status": "passed"
+    },
+    {
+     "name": "test_answer_changes_label",
+     "status": "passed"
+    },
+    {
+     "name": "test_full_human_loop",
+     "status": "passed"
+    },
+    {
+     "name": "test_assistant_is_grounded",
+     "status": "passed"
+    },
+    {
+     "name": "test_user_claim_endpoints",
+     "status": "passed"
+    },
+    {
+     "name": "test_delete_is_total",
+     "status": "passed"
+    }
+   ]
+  },
+  {
+   "module": "test_explain",
+   "title": "Explainability",
+   "what": "digital twin summary, why-not-flagged, scope, uploads",
+   "passed": 7,
+   "failed": 0,
+   "skipped": 0,
+   "tests": [
+    {
+     "name": "test_twin_summary_counts_are_derived_from_real_lines",
+     "status": "passed"
+    },
+    {
+     "name": "test_why_not_flagged_on_the_college_fee_and_on_a_flagged_line",
+     "status": "passed"
+    },
+    {
+     "name": "test_why_not_explains_a_legitimate_retry_without_claiming_it",
+     "status": "passed"
+    },
+    {
+     "name": "test_scope_is_honest",
+     "status": "passed"
+    },
+    {
+     "name": "test_validation_endpoint_never_fabricates",
+     "status": "passed"
+    },
+    {
+     "name": "test_upload_hygiene_extension_and_headers",
+     "status": "passed"
+    },
+    {
+     "name": "test_indian_bank_inr_column_pdf_layout_and_sms_chgs",
+     "status": "passed"
+    }
+   ]
+  },
+  {
+   "module": "test_notify",
+   "title": "Real delivery",
+   "what": "mail redirected to the safe address; never to a bank",
+   "passed": 5,
+   "failed": 0,
+   "skipped": 0,
+   "tests": [
+    {
+     "name": "test_unconfigured_is_simulated_not_failed",
+     "status": "passed"
+    },
+    {
+     "name": "test_demo_to_overrides_every_recipient",
+     "status": "passed"
+    },
+    {
+     "name": "test_smtp_failure_never_crashes",
+     "status": "passed"
+    },
+    {
+     "name": "test_human_loop_with_real_mail",
+     "status": "passed"
+    },
+    {
+     "name": "test_holder_can_approve_without_guardian",
+     "status": "passed"
+    }
+   ]
+  },
+  {
+   "module": "test_ocr",
+   "title": "Passbook OCR",
+   "what": "multi-line narrations, direction by balance, slip repair",
+   "passed": 4,
+   "failed": 0,
+   "skipped": 0,
+   "tests": [
+    {
+     "name": "test_canara_passbook_layout",
+     "status": "passed"
+    },
+    {
+     "name": "test_repair_ocr_amount_slips",
+     "status": "passed"
+    },
+    {
+     "name": "test_missing_ocr_engine_is_a_friendly_422",
+     "status": "passed"
+    },
+    {
+     "name": "test_parser_crash_is_a_friendly_422",
+     "status": "passed"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+services:
+  vasool:
+    build: .
+    ports: ["8000:8000"]
+    volumes: ["vasool-data:/data"]
+    environment:
+      - VASOOL_DB=/data/vasool.db
+      # - VASOOL_LLM=on            # optional: let a language model rephrase (never decide) answers
+      # - ANTHROPIC_API_KEY=...
+volumes:
+  vasool-data:

@@ -1,0 +1,134 @@
+{
+  "n_features": 13,
+  "explained_variance_ratio": [
+    0.4099,
+    0.1613,
+    0.1011,
+    0.0854,
+    0.0674,
+    0.0457,
+    0.0381,
+    0.034,
+    0.0328,
+    0.0137,
+    0.0062,
+    0.0032,
+    0.0011
+  ],
+  "cumulative": [
+    0.4099,
+    0.5713,
+    0.6724,
+    0.7578,
+    0.8253,
+    0.871,
+    0.909,
+    0.943,
+    0.9758,
+    0.9894,
+    0.9957,
+    0.9989,
+    1.0
+  ],
+  "n_components_95": 9,
+  "loadings_pc1_3": {
+    "PC1": {
+      "monthly_spend": 0.373,
+      "monthly_income": 0.405,
+      "txn_per_month": 0.359,
+      "avg_txn": 0.237,
+      "upi_share": 0.005,
+      "card_share": 0.268,
+      "atm_share": -0.302,
+      "transfer_share": 0.156,
+      "charges_per_month": -0.163,
+      "refunds_per_month": 0.236,
+      "avg_balance": 0.368,
+      "min_balance": 0.247,
+      "spend_income_ratio": -0.215
+    },
+    "PC2": {
+      "monthly_spend": -0.183,
+      "monthly_income": -0.167,
+      "txn_per_month": 0.15,
+      "avg_txn": -0.357,
+      "upi_share": 0.568,
+      "card_share": 0.24,
+      "atm_share": -0.37,
+      "transfer_share": -0.342,
+      "charges_per_month": -0.099,
+      "refunds_per_month": 0.341,
+      "avg_balance": -0.128,
+      "min_balance": -0.089,
+      "spend_income_ratio": -0.063
+    },
+    "PC3": {
+      "monthly_spend": -0.211,
+      "monthly_income": -0.014,
+      "txn_per_month": -0.328,
+      "avg_txn": 0.144,
+      "upi_share": 0.073,
+      "card_share": 0.231,
+      "atm_share": 0.14,
+      "transfer_share": -0.511,
+      "charges_per_month": -0.125,
+      "refunds_per_month": -0.263,
+      "avg_balance": 0.314,
+      "min_balance": 0.544,
+      "spend_income_ratio": -0.091
+    }
+  },
+  "components_tested": [
+    2,
+    3,
+    5,
+    8,
+    13
+  ],
+  "performance": {
+    "2": {
+      "RF archetype F1": 0.8341987418517874,
+      "kNN archetype F1": 0.8400005302792403
+    },
+    "3": {
+      "RF archetype F1": 0.9549664713330298,
+      "kNN archetype F1": 0.962013359615596
+    },
+    "5": {
+      "RF archetype F1": 0.98086141130247,
+      "kNN archetype F1": 0.9855380407589884
+    },
+    "8": {
+      "RF archetype F1": 0.9761193366637239,
+      "kNN archetype F1": 0.9877490614944678
+    },
+    "13": {
+      "RF archetype F1": 0.9809546701066523,
+      "kNN archetype F1": 0.9882781302934017
+    }
+  },
+  "text_svd_sweep": {
+    "10": {
+      "logreg_f1": 0.8412298575494124,
+      "explained": 0.20232973030932286
+    },
+    "25": {
+      "logreg_f1": 0.8884750106419927,
+      "explained": 0.36510137350809824
+    },
+    "50": {
+      "logreg_f1": 0.9241847893473197,
+      "explained": 0.596149349136765
+    },
+    "100": {
+      "logreg_f1": 0.9893366788695023,
+      "explained": 0.8761935611713955
+    },
+    "200": {
+      "logreg_f1": 0.9992433217520077,
+      "explained": 0.9839534307128446
+    }
+  },
+  "text_full_features_f1": 0.9993699391494486,
+  "text_n_features": 2640
+}

@@ -1,0 +1,171 @@
+{
+  "customers": 500,
+  "features": [
+    "monthly_spend",
+    "monthly_income",
+    "txn_per_month",
+    "avg_txn",
+    "upi_share",
+    "card_share",
+    "atm_share",
+    "transfer_share",
+    "charges_per_month",
+    "refunds_per_month",
+    "avg_balance",
+    "min_balance",
+    "spend_income_ratio"
+  ],
+  "k_range": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "kmeans_inertia": {
+    "2": 4464.81467482829,
+    "3": 3596.55450937537,
+    "4": 3135.0055237767174,
+    "5": 2693.8226283358,
+    "6": 2400.0161148020898,
+    "7": 2206.1286268799004,
+    "8": 2073.1875987649128
+  },
+  "kmeans_silhouette": {
+    "2": 0.2937860744702872,
+    "3": 0.2974191753384478,
+    "4": 0.30847288365320347,
+    "5": 0.32861195159618034,
+    "6": 0.3306122710132374,
+    "7": 0.27779185493554315,
+    "8": 0.25237396181933647
+  },
+  "ward_silhouette": {
+    "2": 0.2937860744702872,
+    "3": 0.2967434866994169,
+    "4": 0.307351429251638,
+    "5": 0.3187092390988554,
+    "6": 0.3280891904977385,
+    "7": 0.2622564106393479,
+    "8": 0.25158386064562616
+  },
+  "ari_vs_archetype_kmeans": {
+    "2": 0.4979150429122792,
+    "3": 0.6699915750576986,
+    "4": 0.8437951447295154,
+    "5": 0.9290833880656113,
+    "6": 0.9583962722771531,
+    "7": 0.6860383909295212,
+    "8": 0.6803425842177999
+  },
+  "ari_vs_archetype_ward": {
+    "2": 0.4979150429122792,
+    "3": 0.6752760809443122,
+    "4": 0.8446544863603073,
+    "5": 0.9738560193068163,
+    "6": 0.9593997947422428,
+    "7": 0.7365267563187533,
+    "8": 0.7077900426082839
+  },
+  "kmeans_ward_agreement": {
+    "2": 1.0,
+    "3": 0.9903817573733092,
+    "4": 0.9952659331121172,
+    "5": 0.932121316369192,
+    "6": 0.9736099181793348,
+    "7": 0.7984858349132367,
+    "8": 0.8254670386393629
+  },
+  "silhouette_plateau": [
+    5,
+    6
+  ],
+  "best_k": 5,
+  "kmeans_vs_ward_ari": 0.932121316369192,
+  "profiles": [
+    {
+      "kmeans": 0,
+      "size": 53,
+      "monthly_spend": 95050.62,
+      "monthly_income": 84550.475,
+      "txn_per_month": 46.737,
+      "upi_share": 0.26,
+      "atm_share": 0.121,
+      "charges_per_month": 0.497,
+      "has_emi": 0.434,
+      "avg_balance": 229839.797,
+      "share": 0.106,
+      "segment": "High-value / business",
+      "dominant_archetype": "business"
+    },
+    {
+      "kmeans": 1,
+      "size": 51,
+      "monthly_spend": 3020.07,
+      "monthly_income": 655.989,
+      "txn_per_month": 4.214,
+      "upi_share": 0.342,
+      "atm_share": 0.326,
+      "charges_per_month": 0.818,
+      "has_emi": 0.0,
+      "avg_balance": 5268.456,
+      "share": 0.102,
+      "segment": "Low-activity",
+      "dominant_archetype": "low_activity"
+    },
+    {
+      "kmeans": 2,
+      "size": 129,
+      "monthly_spend": 8159.85,
+      "monthly_income": 10035.573,
+      "txn_per_month": 8.939,
+      "upi_share": 0.241,
+      "atm_share": 0.405,
+      "charges_per_month": 0.533,
+      "has_emi": 0.07,
+      "avg_balance": 61772.307,
+      "share": 0.258,
+      "segment": "Cash-reliant",
+      "dominant_archetype": "pensioner"
+    },
+    {
+      "kmeans": 3,
+      "size": 74,
+      "monthly_spend": 5978.5,
+      "monthly_income": 7434.059,
+      "txn_per_month": 25.031,
+      "upi_share": 0.556,
+      "atm_share": 0.133,
+      "charges_per_month": 0.485,
+      "has_emi": 0.0,
+      "avg_balance": 42228.675,
+      "share": 0.148,
+      "segment": "Digital-first (UPI heavy)",
+      "dominant_archetype": "student"
+    },
+    {
+      "kmeans": 4,
+      "size": 193,
+      "monthly_spend": 45226.5,
+      "monthly_income": 64162.782,
+      "txn_per_month": 25.604,
+      "upi_share": 0.336,
+      "atm_share": 0.136,
+      "charges_per_month": 0.407,
+      "has_emi": 0.518,
+      "avg_balance": 240747.33,
+      "share": 0.386,
+      "segment": "Regular salaried",
+      "dominant_archetype": "salaried"
+    }
+  ],
+  "segment_names": {
+    "0": "High-value / business",
+    "1": "Low-activity",
+    "2": "Cash-reliant",
+    "3": "Digital-first (UPI heavy)",
+    "4": "Regular salaried"
+  }
+}

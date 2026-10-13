@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bank IQ Rulebook",
+  "type": "object",
+  "required": ["version", "rules"],
+  "properties": {
+    "version": { "type": "string" },
+    "jurisdiction": { "type": "string" },
+    "regulator": { "type": "string" },
+    "notes": { "type": "string" },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "category", "status", "right_en", "source", "effective_from", "evaluable_from", "formula", "evidence_required", "compensation_type"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[A-Z0-9-]+$" },
+          "title": { "type": "string" },
+          "category": { "enum": ["failed_transaction", "charges", "cards", "loans", "rights", "process"] },
+          "status": { "enum": ["active", "suggest", "retired"], "description": "active: may generate a claim. suggest: raises a needs-checking finding only, until a second reviewer confirms text and dates." },
+          "right_en": { "type": "string" },
+          "right_ta": { "type": "string" },
+          "source": {
+            "type": "object",
+            "required": ["circular", "date", "url"],
+            "properties": { "circular": { "type": "string" }, "title": { "type": "string" }, "date": { "type": "string", "format": "date" }, "url": { "type": "string", "format": "uri" } }
+          },
+          "effective_from": { "type": "string", "format": "date" },
+          "effective_to": { "type": ["string", "null"], "format": "date" },
+          "evaluable_from": { "type": "array", "items": { "enum": ["statement", "profile", "user", "document", "case"] } },
+          "parameters": { "type": "object" },
+          "formula": { "type": "string" },
+          "evidence_required": { "type": "array", "items": { "type": "string" } },
+          "questions": { "type": "array" },
+          "compensation_type": { "enum": ["statutory", "refund", "prevent", "process"] },
+          "supersedes": { "type": "string" },
+          "document_help": { "type": "object" }
+        }
+      }
+    }
+  }
+}
