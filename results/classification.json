@@ -288,7 +288,7 @@
           122
         ]
       ],
-      "fit_seconds": 10.7
+      "fit_seconds": 7.0
     },
     "Naive Bayes (Complement)": {
       "cv_accuracy": 0.9350937500000001,
@@ -434,9 +434,9 @@
       "fit_seconds": 0.4
     },
     "Decision Tree": {
-      "cv_accuracy": 0.9695,
-      "cv_accuracy_std": 0.003922341854683229,
-      "cv_f1_macro": 0.9723902703882825,
+      "cv_accuracy": 0.9695625,
+      "cv_accuracy_std": 0.0038646535258674824,
+      "cv_f1_macro": 0.9724984727560073,
       "accuracy": 0.9665,
       "f1_macro": 0.9718785033254216,
       "f1_weighted": 0.967132263859774,
@@ -574,7 +574,7 @@
           122
         ]
       ],
-      "fit_seconds": 12.4
+      "fit_seconds": 17.0
     },
     "kNN (k=7, SVD-200)": {
       "cv_accuracy": 0.97265625,
@@ -717,7 +717,7 @@
           122
         ]
       ],
-      "fit_seconds": 23.4
+      "fit_seconds": 18.3
     }
   },
   "best": "Logistic Regression",
@@ -734,24 +734,24 @@
       "train_f1": 0.729830907590894
     },
     "10": {
-      "cv_f1": 0.8740256137266694,
+      "cv_f1": 0.8740692903984442,
       "train_f1": 0.8836688010645872
     },
     "20": {
-      "cv_f1": 0.9542890709014429,
+      "cv_f1": 0.9542483015101284,
       "train_f1": 0.9657817695188304
     },
     "30": {
-      "cv_f1": 0.9723902703882825,
-      "train_f1": 0.9840555843034224
+      "cv_f1": 0.9724984727560073,
+      "train_f1": 0.9840479958763859
     },
     "50": {
-      "cv_f1": 0.9766289471872026,
-      "train_f1": 0.9893898823139671
+      "cv_f1": 0.9769885547355408,
+      "train_f1": 0.9893568355534874
     },
     "None": {
-      "cv_f1": 0.9766289471872026,
-      "train_f1": 0.9893898823139671
+      "cv_f1": 0.9769885547355408,
+      "train_f1": 0.9893568355534874
     }
   },
   "ml_gain_over_rules_per_class": {
@@ -779,8 +779,9 @@
     "INTEREST_CREDIT"
   ],
   "sample_statement_check": {
-    "n_lines": 94,
+    "n_lines": 135,
     "statements": [
+      "axis_kavya_longtail_2026",
       "canara_amma_pension_2026",
       "canara_amma_pension_2026_mar_may",
       "hdfc_priya_salary_2026",
@@ -788,14 +789,14 @@
       "sbi_arun_student_2025"
     ],
     "agreement": {
-      "Logistic Regression": 0.9893617021276596,
-      "Decision Tree": 0.6276595744680851
+      "Logistic Regression": 0.7703703703703704,
+      "Decision Tree": 0.5555555555555556
     },
     "num_weight_sweep_logreg": {
-      "1.0": 0.8297872340425532,
-      "0.3": 0.8936170212765957,
-      "0.1": 0.9893617021276596,
-      "0.0": 1.0
+      "1.0": 0.6592592592592592,
+      "0.3": 0.6888888888888889,
+      "0.1": 0.7703703703703704,
+      "0.0": 0.7777777777777778
     }
   },
   "train_class_counts": {
